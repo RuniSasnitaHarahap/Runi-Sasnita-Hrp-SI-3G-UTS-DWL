@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ECEBDE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    margin-top: 35px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 48px;
+}
+
+header h1 {
+    font-size: 34px;
+    color: #A59D84;
+}
+
+input {
+    padding: 0.3rem 1rem;
+    text-align: center;
+    color: #A59D84;
+    border-radius: 7px;
+}
+
+.profil img {
+    width: 120px;
+    height: 120px;
+    margin: 2rem;
+    border-radius: 50%;
+    
+}
+
+/* grid */
+.container {
+    margin: 0 30px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.9fr 1.1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+    grid-auto-flow: row;
+    grid-template-areas: 
+        "nav main main main main"
+        "nav aside aside left right"
+        "nav footer footer footer footer";
+    
+}
+
+nav {
+    grid-area: nav;
+    width: 250px;
+    height: auto;
+    padding: 47px 0px;
+    margin-left: 10px;
+    background-color: #A59D84;
+    border-radius: 7px;
+}
+
+nav a {
+    display: block;
+    padding: 19px 53px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #D7D3BF;
+}
+
+nav .keluar {
+    color: #7a6d45;
+}
+
+main {
+    grid-area: main;
+    width: 984px;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A59D84;
+    border-radius: 7px;
+}
+
+.title {
+    margin-left: 10px;
+    color: white;
+}
+
+.title p {
+    margin-top: 20px;
+    color: white;
+}
+
+aside {
+    grid-area: aside;
+    width: 450px;
+    background-color: #D7D3BF;
+    margin-top: 10px;
+    border-radius: 7px;
+    
+}
+
+aside h3 {
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+aside svg {
+    width: 400px;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.left {
+    grid-area: left;
+    margin-top: 10px;
+    background-color: #D7D3BF;
+    width: 200px;
+    border-radius: 7px;
+}
+
+section h3 {
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-bottom: 12px;
+    color: white;
+    
+} 
+
+.matkul {
+    background-color: #C1BAA1;
+    padding: 9px;
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.jadwal {
+    background-color: #C1BAA1;
+    padding: 15px;
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+section p {
+    margin-top: 5px;
+    color: #7a6d45;
+    margin-left: 0px;
+    font-size: 12px;
+
+}
+
+section h6 {
+    margin-top: 5px;
+    color: #7a6d45;
+}
+
+section h4 {
+    color: white;
+}
+
+.right {
+    grid-area: right;
+    margin-top: 10px;
+    background-color: #D7D3BF;
+    width: 250px;
+    border-radius: 7px;
+}
+
+footer {
+    grid-area: footer;
+    margin-top: 10px;
+    margin-left: 0,5rem;
+    width: 984px;
+    background-color: #D7D3BF;
+    border-radius: 7px;
+}
+
+footer h3 {
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-bottom: 10px;
+    color: white;
+
+}
+
+.doc h1, p {
+    color: #7a6d45;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+  
+.doc span {   
+     font-weight: bold;
+}
+
+.doc a {
+    color: white;
+}
